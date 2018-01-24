@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.androidbootcamp.healthcareapp.Swedish">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout6">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Swedish Hospital"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/appBarLayout6"
+        android:layout_toEndOf="@+id/home10" />
+
+    <Button
+        android:id="@+id/fav10"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add To Favorites"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="     At Swedish, our commitment is more than something we strive for. It's reflected in everything we do. It's part of who we are, and it begins with our dedication to our patients and the health of our region. Swedish is committed to creating a culture that values patient safety above all else. This is evidenced in the way we provide ongoing training to our staff of more than 10,000 employees, with an emphasis on error prevention tools, techniques for clear communication, and team support exercises.  ​"
+        android:textSize="18sp"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Directions"
+        android:textSize="24sp"
+        android:id="@+id/map10"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/phone10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(206) 320-3399"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/map10"
+        android:layout_alignBottom="@+id/map10"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/web10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="http://www.swedish.org/"
+        android:textAlignment="center"
+        android:textColor="#0000FF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/home10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:layout_above="@+id/fav10"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/contact10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTACTS"
+        android:layout_above="@+id/web10"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

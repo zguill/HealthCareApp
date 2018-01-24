@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.androidbootcamp.healthcareapp.Calvary">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout9">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_calvary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Calvary Hospital"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/appBarLayout9"
+        android:layout_toEndOf="@+id/home3" />
+
+    <Button
+        android:id="@+id/fav2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add To Favorites"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="     The mission of Calvary Hospital is to care for the medical, emotional and spiritual needs of our adult patients with advanced cancer and other life-limiting illnesses.  It is the only fully accredited acute care hospital in the U.S. devoted exclusively to the palliative care of adult patients.  Calvary's core principles are compassion, non-abandonment, dignity and love.
+Calvary's mission today is the same as when we started nearly 120 years ago.  Our family-centric approach to patient care is key to relieving the stress and concerns of family members as well. ​"
+        android:textSize="18sp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/fav2"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Directions"
+        android:textSize="24sp"
+        android:id="@+id/map3"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/phone3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(718) 518-2000"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/web6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="http://www.calvaryhospital.org/"
+        android:textAlignment="center"
+        android:textColor="#0000FF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/home3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:layout_above="@+id/fav2"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/contact3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTACTS"
+        android:layout_above="@+id/web6"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

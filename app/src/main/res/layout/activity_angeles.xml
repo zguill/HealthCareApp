@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.androidbootcamp.healthcareapp.Angeles">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout3">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/appBarLayout3"
+        android:layout_toEndOf="@+id/home1"
+        android:text="Angeles Medical Clinic"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/fav1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add To Favorites"
+        android:textSize="24sp"
+        android:onClick="true"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="     As a leading Primary Care Doctor and a Dermatologist who serves the greater Los Angeles area, Dr. Sarvenaz Mobasser provides patients with individual, comprehensive treatment plans that serve their unique healthcare needs.
+Dr. Mobasser specializes in cosmetic medicine as well as family medicine for patients of all ages. Her use of the most updated technology and equipment ensures that patients receive the best care available.
+Patients remember Dr. Mobasser for her compassion. ​"
+        android:textSize="18sp"
+        android:id="@+id/textView"
+        android:layout_above="@+id/phone1"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Directions"
+        android:textSize="24sp"
+        android:id="@+id/map1"
+        android:layout_above="@+id/web3"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp" />
+
+    <Button
+        android:id="@+id/phone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(213) 457-4000"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/map1"
+        android:layout_alignBottom="@+id/map1"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/web3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="http://drmobassermd.com/"
+        android:textAlignment="center"
+        android:textColor="#0000FF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/home1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fav1"
+        android:layout_alignParentStart="true"
+        android:text="HOME" />
+
+    <Button
+        android:id="@+id/contact1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTACTS"
+        android:layout_below="@+id/phone1"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.androidbootcamp.healthcareapp.Cedars">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout5">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_cedars" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Cedars Sinai"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/appBarLayout5"
+        android:layout_toEndOf="@+id/home4" />
+
+    <Button
+        android:id="@+id/fav3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add To Favorites"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="     Cedars-Sinai is one of the largest nonprofit academic medical centers in the U.S. with 886 licensed beds, 2,100 physicians, 2,800 nurses and thousands of other healthcare professionals and staff. Clinical programs range from primary care for preventing, diagnosing and treating common conditions to specialized treatments for rare, complex and advanced illnesses. In addition, Cedars-Sinai serves the community through its Medical Network, which includes the highly rated Cedars-Sinai Medical Group and Cedars-Sinai Health Associates ​"
+        android:textSize="18sp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/fav3"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Directions"
+        android:textSize="24sp"
+        android:id="@+id/map4"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/phone4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1-800-233-2771"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/map4"
+        android:layout_alignBottom="@+id/map4"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/web4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="https://www.cedars-sinai.edu/"
+        android:textAlignment="center"
+        android:textColor="#0000FF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/home4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:layout_below="@+id/appBarLayout5"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/contact4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTACTS"
+        android:layout_below="@+id/phone4"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

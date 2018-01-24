@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">HealthCare App</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_harborview">Harborview</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_polyclinic">Polyclinic</string>
+    <string name="title_activity_swedish">Swedish</string>
+    <string name="title_activity_cedars">Cedars</string>
+    <string name="title_activity_angeles">Angeles</string>
+    <string name="title_activity_shriners">Shriners</string>
+    <string name="title_activity_md">MD</string>
+    <string name="title_activity_bethany">Bethany</string>
+    <string name="title_activity_lenox">Lenox</string>
+    <string name="title_activity_calvary">Calvary</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_contacts">Contacts</string>
+</resources>

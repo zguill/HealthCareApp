@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.androidbootcamp.healthcareapp.Contacts">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout11">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_contacts" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="115dp"
+        android:text="Angeles Medical Clinic        213-457-4000\nBethany Medical Clinic        607-353-6772\nCalvary                                   718-518-2000\nCedars Sinai                          800-233-2771\nCity MD                                  646-596-9267\nHarborview Hospital            206-744-3000\nLenox Hill                               212-434-2000\nPolyclinic                               206-322-1211\nShriner Children Hospital   213-388-3151\nSwedish Hospital                 206-320-3399\nHelp Line                               123-456-7890"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout11"
+        android:text="CLINIC CONTACTS"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_toEndOf="@+id/home11" />
+
+    <Button
+        android:id="@+id/home11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/extramap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAP"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.androidbootcamp.healthcareapp.Harborview">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout2">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/appBarLayout2"
+        android:text="Harborview Medical Center"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:id="@+id/textView3"
+        android:layout_toEndOf="@+id/home5" />
+
+    <Button
+        android:id="@+id/fav4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add To Favorites"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="     Harborview is the only designated Level I adult and pediatric trauma and burn center in the state of Washington and serves as the regional trauma and burn referral center for Alaska, Montana and Idaho. UW Medicine physicians and other health professionals based at Harborview provide highly specialized services for emergency medicine, orthopedics, neurosciences, ophthalmology, vascular surgery, behavior health, HIV/AIDS, complex critical care and rehabilitation. Harborview also serves as the Disaster Medical Control Center for Seattle/King County.​"
+        android:textSize="18sp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/fav4"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Directions"
+        android:textSize="24sp"
+        android:id="@+id/map5"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/phone5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(206) 744-3000"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/web1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="www.uwmedicine.org/harborview"
+        android:textAlignment="center"
+        android:textColor="#0000FF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/home5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:layout_below="@+id/appBarLayout2"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/contact5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTACTS"
+        android:layout_above="@+id/web1"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

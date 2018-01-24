@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.androidbootcamp.healthcareapp.Bethany">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout10">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_bethany" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/appBarLayout10"
+        android:layout_toEndOf="@+id/home2"
+        android:text="Bethany Medical Clinic"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/fav5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add To Favorites"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="     Bethany Medical Clinic in New York City, New York, brings a personal touch to primary care with two primary care physicians, Shirin Peters and Aditi Grover, and one expert dermatologist, Salma Pothiawala. Combined, they use their skills to assist New York City and the surrounding area with a comprehensive level of care. Bethany Medical Clinic also has a licensed acupuncturist, Jessica Kwong, on staff. The clinic also has two physician’s assistants, Arielle Romm and Sara Leso.​"
+        android:textSize="18sp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/fav5"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Directions"
+        android:textSize="24sp"
+        android:id="@+id/map2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp" />
+
+    <Button
+        android:id="@+id/phone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(607) 353-6772"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/map2"
+        android:layout_alignBottom="@+id/map2"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/web7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="http://www.bmcofny.com/"
+        android:textAlignment="center"
+        android:textColor="#0000FF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/home2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/appBarLayout10"
+        android:text="HOME" />
+
+    <Button
+        android:id="@+id/contact2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTACTS"
+        android:layout_above="@+id/web7"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
